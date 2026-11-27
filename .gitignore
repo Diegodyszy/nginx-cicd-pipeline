@@ -3,4 +3,5 @@ cat << 'EOF' > .gitignore
 .env
 *.swp
 *.log
+actions-runner/
 EOF
