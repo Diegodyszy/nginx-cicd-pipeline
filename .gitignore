@@ -1,0 +1,6 @@
+cd ~/nginx-proxy-lab
+cat << 'EOF' > .gitignore
+.env
+*.swp
+*.log
+EOF

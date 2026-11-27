@@ -1,0 +1,3 @@
+Nginx CI/CD Pipeline é um laboratório prático de automação de entrega contínua (CI/CD) construído sobre uma arquitetura multi-container com Nginx como proxy reverso, redes isoladas (frontend_net e backend_net) e banco de dados MySQL.
+
+O objetivo do projeto é eliminar deploys manuais via terminal: a cada git push na branch main, uma pipeline no GitHub Actions executa a análise estática de scripts com ShellCheck, valida a sintaxe do Docker Compose e do Nginx (nginx -t), realiza smoke tests de disponibilidade via curl e aciona um Self-Hosted Runner na VM Ubuntu Server para atualizar os containers automaticamente sem indisponibilidade.
